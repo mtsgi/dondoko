@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "dondoko",
+    "short_name": "dondoko",
+    "version": "1.0",
+    "description": "どんどこキーコンフィグする拡張機能",
+    "icons": {
+        "16": "16.png",
+        "48": "48.png"
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["http://*.mbga.jp/*"],
+          "js": ["jquery.min.js", "cs.js"]
+        }
+    ],
+
+    "permissions": [
+        "activeTab"
+	]
+}
